@@ -26,11 +26,10 @@ At this point, the VisionArm is still being built, I continue working on the pro
 * Robotic Arm actuated via Servo Motors
 * Robotic Arm Controlled Using Xbox 360 Controller
 * Robotic Arm Controlled Using Computer
-* Robotic Arm Designed for Future Modifications and Expansions
 
 ## Future Developments
 
 * Install a Vision System Using an Industrial Camera
 * Add Object Recognition and Tracking Capabilities to the Robotic Arm and the Vision System Installed in the Robotic Arm
 * Ability to Perform Pick and Place Tasks from a Computer Visually
-* Enhance and Improve the Robotic Arm's Movement by Having More Intelligent and Accurate Movements.
+
