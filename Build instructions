@@ -1,1 +1,146 @@
+# 5-DOF Robotic Arm Assembly and Operating Guide
+
+
+# Materials Required
+
+## Electronics
+
+| Quantity | Component                                   |
+| -------- | ------------------------------------------- |
+| 1        | Arduino Uno                                 |
+| 1        | PCA9685 Servo Driver Module (or equivalent) |
+| 1        | 5V 2A Power Supply                          |
+| 3        | MG996R Servo Motors (Base, Shoulder, Elbow) |
+| 2        | MG90 Servo Motors (Wrist, Gripper)          |
+| 1        | USB Cable for Arduino                       |
+| Several  | Male-to-Female Jumper Wires                 |
+
+
+# Step 1: Print All 3D Parts
+
+After printing all 3D parts, assemble the robotic arm from the base upward:
+
+Recommended print settings:
+
+* Material: PLA
+* Layer Height: 0.20 mm
+* Infill: 20% to 30%
+* Supports: As required
+* Wall Count: 3
+
+After printing:
+
+1. Remove all support material.
+2. Clean mounting holes.
+3. Test fit all parts before assembly.
+
+Base Joint
+Install an MG996R servo into the base mount.
+Secure it with screws.
+Attach the base platform to the servo horn.
+
+Shoulder Joint
+Install an MG996R servo into the shoulder bracket.
+Attach the upper arm link to the servo horn.
+
+Elbow Joint
+Install an MG996R servo into the elbow mount.
+Attach the forearm link to the servo horn.
+
+Wrist Joint
+Install an MG90 servo into the wrist mount.
+Attach the wrist assembly to the servo horn.
+
+Gripper
+Install an MG90 servo into the gripper housing.
+Connect the gripper linkage to the servo horn.
+
+# Step 7: Route the Wiring
+
+Route all servo wires neatly through the arm structure.
+
+Recommended routing:
+
+* Secure wires with zip ties.
+* Leave enough slack at each joint for movement.
+* Keep wires away from moving parts.
+
+Servo assignments:
+
+| Servo   | Function |
+| ------- | -------- |
+| Servo 0 | Base     |
+| Servo 1 | Shoulder |
+| Servo 2 | Elbow    |
+| Servo 3 | Wrist    |
+| Servo 4 | Gripper  |
+
+---
+
+# Step 8: Connect Servos to the Servo Driver
+
+Connect each servo to the servo driver module.
+
+| Driver Channel | Servo    |
+| -------------- | -------- |
+| CH0            | Base     |
+| CH1            | Shoulder |
+| CH2            | Elbow    |
+| CH3            | Wrist    |
+| CH4            | Gripper  |
+
+Verify servo polarity:
+
+* Brown/Black = GND
+* Red = +5V
+* Orange/Yellow = Signal
+
+---
+
+# Step 9: Connect Servo Driver to Arduino Uno
+
+Connect the servo driver module to the Arduino Uno.
+
+| Servo Driver | Arduino Uno |
+| ------------ | ----------- |
+| VCC          | 5V          |
+| GND          | GND         |
+| SDA          | A4          |
+| SCL          | A5          |
+
+---
+
+# Step 10: Connect Power Supply
+
+1. Connect the 5V 2A power supply to the servo driver's external power input.
+2. Double-check polarity before powering the system.
+3. Ensure all connections are secure.
+
+**Important:** Power the servos from the external 5V supply, not directly from the Arduino.
+
+---
+
+# Operating Instructions
+
+## Power-Up Procedure
+
+1. Verify all wiring connections.
+2. Plug the 5V 2A power supply into the servo driver module.
+3. Connect the Arduino Uno to the PC using the USB cable.
+4. Wait for the Arduino to be detected by the computer.
+
+## Running the Software
+
+1. Open the project folder on your computer.
+2. Launch the Python control application.
+3. Select the Arduino COM port from the software.
+4. Click Connect.
+5. Wait for the connection confirmation message.
+6. Use the control interface to move:
+
+   * Base
+   * Shoulder
+   * Elbow
+   * Wrist
+   * Gripper
 
