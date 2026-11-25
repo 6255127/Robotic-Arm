@@ -32,7 +32,8 @@ At this point, the VisionArm is still being built, I continue working on the pro
 * Install a Vision System Using an Industrial Camera
 * Add Object Recognition and Tracking Capabilities to the Robotic Arm and the Vision System Installed in the Robotic Arm
 * Ability to Perform Pick and Place Tasks from a Computer Visually
-  ![video](Robotic-Arm.mp4)
+<video src="Robotic-Arm.mp4" controls="controls" style="max-width: 730px;">
+</video>
 
 
 
