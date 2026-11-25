@@ -34,7 +34,7 @@ At this point, the VisionArm is still being built, I continue working on the pro
 * Ability to Perform Pick and Place Tasks from a Computer Visually
 <video src="Robotic-Arm.mp4" controls="controls" style="max-width: 730px;">
 </video>
-
+<video src="Robotic-Arm.mp4" controls></video>
 
 
   
